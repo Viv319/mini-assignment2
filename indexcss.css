@@ -21,7 +21,7 @@ body{
     margin-top: 15px;  
     /* 27 px */
     margin-left: 44px;
-    margin-right: 153px;
+    margin-right: 60px;
 }
 
 #span1{
@@ -54,7 +54,8 @@ nav{
     width: 314px;
     height: 57px;
     margin-top: 36px;
-    margin-left: 59px;
+    margin-left: 69px;
+    margin-right: 50px;
     border-radius: 63px;
 }
 
@@ -85,7 +86,21 @@ nav{
     background-color: #FFFFFF;
     margin: 6px;
 }
+
 #share {
+    position: sticky;
+    z-index: 999;
+    margin-top: -0px;
+    top: 175px;
+    width: 88px;
+    border-radius: 11px;
+    margin-right: 20px;
+    float: right;
+}
+
+/* #share {
+    width: 112px;
+    height: 406px;
     position: sticky;
     z-index: 999;
     margin-top: 0px;
@@ -94,7 +109,7 @@ nav{
     border-radius: 11px;
     margin-right: 20px;
     float:right;
-}
+} */
 
 #main{
     width: 1542px;
@@ -374,13 +389,13 @@ nav{
     /* background-color: yellowgreen; */
     display: inline;
     /* margin-right: 100%vh; */
+    margin-top: 164px;
+    margin-left: 785px;
 }
 
 #nextbtn{
     width: 207px;
     height: 78px;
-    margin-top: 164px;
-    margin-left: 785px;
     border-radius: 9px;
     font-family: 'Roboto';
     font-weight: 400;
@@ -392,7 +407,7 @@ nav{
     background-image: url(Arrow\ 1.svg);
     background-repeat: no-repeat;
     background-size: 38px;
-    background-position: right;
+    background-position: 85% 50%;
     display: block;
 }
 
