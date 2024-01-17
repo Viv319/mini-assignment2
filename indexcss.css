@@ -421,4 +421,5 @@ nav{
 .fixed-image img {
     width: 200px; /* adjust as needed */
     height: auto;
+    /* size: 70%; */
 }
