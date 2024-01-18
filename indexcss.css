@@ -5,6 +5,7 @@
 
 body{
     margin: 0;
+    padding: 0;
     font-family: 'DM Sans';
     box-sizing: border-box;
 }
@@ -75,7 +76,6 @@ nav{
 }
 
 .wrap{
-    /* position: absoluste; */
     margin-top: 25px;
     margin-left: 10px;
 }
@@ -85,66 +85,57 @@ nav{
     height: 10px;
     background-color: #FFFFFF;
     margin: 6px;
+    border-radius: 60px;
 }
 
 #share {
     position: sticky;
+    top: 5px;
     z-index: 999;
     margin-top: -0px;
-    top: 175px;
-    width: 88px;
+    width: 100px;
+    height: 500px;
     border-radius: 11px;
     margin-right: 20px;
     float: right;
 }
 
-/* #share {
-    width: 112px;
-    height: 406px;
-    position: sticky;
-    z-index: 999;
-    margin-top: 0px;
-    top: 175px;
-    width: 88px;
-    border-radius: 11px;
-    margin-right: 20px;
-    float:right;
-} */
+#share img {
+    width: 100px;
+    height: 400px;
+}
 
 #main{
-    width: 1542px;
-    height: 1695px; 
-    position: absolute;
-    /* background-color: #6F7373; */
+    margin-bottom: 50px;
+}
+
+#middle{
+    display: flex;
 }
 
 #group1{
     width: 456px;
     height: 507px;
-    /* margin-top: -100px; */
-    /* margin-top: 162px;
-    margin-left: 129px;
-    margin-right: 49px;
-    margin-bottom: 137px; */
+    margin-top: 70px;
+    margin-left: 40px;
     border-radius: 20px;
-    display: inline-block;
+    flex:1;
 }
 
 #rectangle{
     width: 972px;
     height: 507px;
-    margin-top: 162px;
-    margin-left: 49px;
+    margin-top: 93px;
+    margin-left: 80px;
     margin-right: 0px;
     border-radius: 20px;
     border: 6px;
     border-color: #FFFFFF;
     background-color: #E5D8FF;
-    display: inline-block;
+    flex: 2;
 }
 
 #textarea{
-    /* font-family: 'DM Sans'; */
     position: absolute;
     width: 922px;
     height: 83px;
@@ -159,19 +150,15 @@ nav{
 }
 
 #ul2 ul{
-    /* align-items: center; */
     gap: 59px;
     list-style: none;
     display: flex;
-    /* border-radius: 11px; */
 }
 
 #ul2{
     margin-left: 100%vh;
     margin-top: 137px;
     margin-bottom: 0px;
-
-    /* font-family: 'DM Sans'; */
 }
 
 #ul2 ul li:nth-child(1){
@@ -241,9 +228,11 @@ nav{
     margin-top: 188.52px;
     margin-left: 0px;
     border-radius: 21px;
+    display: flex;
 }
 
 #ul3 ul{
+    margin-top: 80px;
     list-style: none;
     /* display: flex; */
     font-weight: 700;
@@ -289,19 +278,15 @@ nav{
 
 }
 
-#ul3{
-    display: inline-block;
-}
-
 #bottomRectangle{
     width: 1004px;
     height: 656px;
     border-radius: 19px;
-    /* background-color: #FFFFFF; */
     background-color: #FFFFFF;
-    display: inline-block;  
-    margin-top: 31px;
+    flex:2; 
+    margin-top: 30px;
     margin-left: 62px;
+    margin-right: 25px;
 }
 
 #bottomRectangle h2{
@@ -325,9 +310,7 @@ nav{
     letter-spacing: 10.5%;
     color: #04285A;
     list-style: none;
-    gap: 39px;
-    /* background-color: aqua; */
-    /* display: inline-block; */
+    margin-left: 50px;
 }
 
 #ul4 {
@@ -335,32 +318,31 @@ nav{
 }
 
 #ul5{
-    /* display: inline-flex; */
     display: inline-block;
 }
 
-/* #ul4 ul li:nth-child(1,2,3,4) */
-
-/* #ul4 ul li:nth-child(1){
+#ul4 ul li:nth-child(1){
     width: 85px;
     height: 26px;
+    margin-bottom: 20px;
 }
 
 #ul4 ul li:nth-child(2){
     width: 88px;
     height: 26px;
+    margin-bottom: 20px;
 }
 
 #ul4 ul li:nth-child(3){
     width: 99px;
     height: 26px;
+    margin-bottom: 20px;
 }
 
 #ul4 ul li:nth-child(4){
     width: 99px;
     height: 26px;
-    
-} */
+}
 
 #ul5 ul{
     font-family: 'Roboto';
@@ -369,33 +351,44 @@ nav{
     line-height: 28.13px;
     letter-spacing: 5%;
     color: #143565;
-    gap: 43px;
     list-style: none;
-    
-    /* background-color: violet; */
-    /* display: inline-block; */
-
-
 }
 
-/* #ul5 ul li:nth-child(1,2,3,4) */
+#ul5 ul li:nth-child(1){
+    width: 200px;
+    height: 26px;
+    margin-bottom: 20px;
+}
+
+#ul5 ul li:nth-child(2){
+    width: 200px;
+    height: 26px;
+    margin-bottom: 20px;
+}
+
+#ul5 ul li:nth-child(3){
+    width: 300px;
+    height: 26px;
+    margin-bottom: 20px;
+}
+
+#ul5 ul li:nth-child(4){
+    width: 99px;
+    height: 26px;
+    
+}
 
 #next{
-    /* width: 207px;
-    height: 78px; */
-    /* margin-top: 564px;
-    margin-left: 785px; */
-    /* background-color: #000000; */
-    /* background-color: yellowgreen; */
+    width: 207px;
+    height: 78px;
     display: inline;
-    /* margin-right: 100%vh; */
-    margin-top: 164px;
-    margin-left: 785px;
+    margin-left: 735px;
 }
 
 #nextbtn{
     width: 207px;
     height: 78px;
+    margin-top: 200px;
     border-radius: 9px;
     font-family: 'Roboto';
     font-weight: 400;
@@ -408,18 +401,17 @@ nav{
     background-repeat: no-repeat;
     background-size: 38px;
     background-position: 85% 50%;
-    display: block;
+    margin-right: 100px;
 }
 
 .fixed-image {
         position: fixed;
-        bottom: 20px; /* adjust as needed */
-        right: 20px; /* adjust as needed */
-        z-index: 999; /* adjust as needed */
+        bottom: -35px; 
+        right: 20px;
+        z-index: 999; 
     }
 
 .fixed-image img {
-    width: 200px; /* adjust as needed */
+    width: 150px; 
     height: auto;
-    /* size: 70%; */
 }
